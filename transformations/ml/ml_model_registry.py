@@ -15,7 +15,7 @@ def ml_model_registry():
     This dataset tracks model metadata within the pipeline.
     """
     # Read training metrics
-    metrics_df = spark.read.table("ml_model_training_[votrePrenom_Nom]")
+    metrics_df = spark.read.table("ml_model_training")
     
     # Create model registry entry with metadata
     return (

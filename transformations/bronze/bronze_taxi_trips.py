@@ -12,5 +12,5 @@ def bronze_taxi_trips():
         spark.readStream.format("cloudFiles")
         .option("cloudFiles.format", "parquet")
         .option("cloudFiles.inferColumnTypes", "true")
-        .load("/Vol[VotrePrenomNom]/taxi_mlops_prod_votrePrenom_Nom/taxi_analytics/yellowdata")
+        .load("/Volumes/taxi_mlops_prod/taxi_analytics/yellowdata")
     )

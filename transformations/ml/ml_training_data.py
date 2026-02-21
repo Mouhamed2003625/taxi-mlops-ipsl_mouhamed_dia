@@ -14,7 +14,7 @@ def ml_training_data():
     - Adds train/test split indicator
     """
     return (
-        spark.read.table("silver_taxi_features_[votrePrenom_Nom]")
+        spark.read.table("silver_taxi_features")
         .filter("""
             trip_distance > 0 AND trip_distance < 100 AND
             trip_duration_minutes > 0 AND trip_duration_minutes < 180 AND

@@ -16,7 +16,7 @@ def ml_model_training():
     security restrictions. This dataset provides the prepared training data.
     """
     # Read training data
-    df = spark.read.table("ml_training_data_[votrePrenom_Nom]")
+    df = spark.read.table("ml_training_data")
     
     # Split into train and test
     train_df = df.filter("is_training = true")
