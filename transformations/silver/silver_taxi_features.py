@@ -111,5 +111,3 @@ def silver_taxi_features():
         )
     )
 
-
-    #   Ajout dêun commentaire pour voir lêexecution du pipeline parce que on avait fait un push sans pour autant activer lêexecution du pipeline avec le fork de la branche 
