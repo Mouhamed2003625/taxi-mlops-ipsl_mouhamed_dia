@@ -110,3 +110,6 @@ def silver_taxi_features():
             F.when(F.col("pickup_day_of_week").isin([1, 7]), 1).otherwise(0)
         )
     )
+
+
+    #   Ajout dêun commentaire pour voir lêexecution du pipeline parce que on avait fait un push sans pour autant activer lêexecution du pipeline avec le fork de la branche 
